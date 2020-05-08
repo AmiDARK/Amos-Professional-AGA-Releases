@@ -1,4 +1,16 @@
-******************************************************************** 2020.05.04-05 Restart from source
+******************************************************************** 2020.05.07-08 Reinject previous Changes.
+
+- Reincluded all changes for +w.s -> +AmosProAGA_library.s
+- Reincluded all changes for +lib.s -> +AmosProAGA_lib.s
+- Reincluded all changes for +Ilib.s -> +AmosProAGA_libI.s
+- Reincluded all changes for +Equ.s -> +AmosProAGA_lib_Equ.s
+- Reincluded all changes for +WEqu.s -> +AmosProAGA_library_Equ.s
+- Reincluded all changes for +Edit.s -> +EditorAGA_Config.s
+- Reincluded all changes for +Interpreter.s -> +InterpreterAGA_Config.s
+- Reincluded Extensions/+AgaSupport.s
+- Reincluded all changes for Extensions/+compact.s
+
+******************************************************************** 2020.05.04-07 Restart from source
 - Project entirely restarted from source.
 - Used Marc365 repository as François's one is unusable until fixing special characters issues in many source code files.
 - Recompiles version to check if everything is OK
@@ -67,3 +79,4 @@
 - AEDIT : updated +Edit.s for name changing.
 - +CLib.s : renamed to AmosProAGA_CLib.s
 - +Version.s : Renamed to +AmosProAGA_Version.s
+- +Verif.s : Renamed to +AmosProAGA_Verif.s
