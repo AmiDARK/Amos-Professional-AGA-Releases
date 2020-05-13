@@ -18,7 +18,7 @@ During integration of AGA support to the original Amos Professional 2.00 (ECS), 
 
 This problem forces me to take a decision concerning the future of the development of AGA support for Amos Professional :
 
- I must proceed to a complete reorganization of both Source Code,  and file names for the releases.
+ I must proceed to a complete reorganization of both Source Code, and file names for the releases.
 
 This mean, for example, that the new Amos Professional AGA 3.00 will use an AmosProAGA.library instead of the original AMOS.library.
 This was required to be sure that any Amiga users can have both original Amos Professional 2.00  (ECS) and Amos Professional 3.00 AGA (X version) capable of running without conflicts on the same computer.

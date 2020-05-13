@@ -1,3 +1,22 @@
+
+
+
+******************************************************************** 2020.05.13 AmosPro_Personal.lib Update + AmosPro AGA Pen/Color system Update.
+
+- Update AmosPro_Personal.lib to get latest paraters from d3 (AmosPro v2+) instead of all parameters from (a3)+ (AmosPro v1)
+- AmosPro_Personal.lib should not be used with new AGA System (it currently crashes). It will soonly be integrated inside the AmosPro_AgaSupport.lib
+- Updated the PEN/Colors methods to be compatible with AGA 00-255 colors.
+- Fixed AGA Hires SPack/UnPack example
+
+******************************************************************** 2020.05.10 AmosPro_Personal.lib
+
+- Update of the AmosPro_Personal.lib to fit Amos Pro v2 compliants and use new AGA includes automatically
+- Added a new script 'aext2' to compile third party extensions and copy them directly in the AmosProAGA_System:APSystemAGA/ folder (without including them in the config)
+- Added the AmosPRO_Personal.lib to the new 'aext2' script
+- Remain to do : Update data get from AmosPro (old v1 used to load everything from (a3)+ and new v2+ put latest value into D3))+ en APv1.
+- Update AmosPro text drawing color system to be compatible with 256 colors (instead of 207 max due to a value shifting by +48 in bytes).
+
+
 ******************************************************************** 2020.05.07-08 Reinject previous Changes.
 
 - Reincluded all changes for +w.s -> +AmosProAGA_library.s
