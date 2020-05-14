@@ -1,4 +1,9 @@
+******************************************************************** 2020.05.14 Bob Get & Color Palette
 
+- +AmosProAGA_lib.s/Bnk.Ric2 restored to initial state before AGA upgrade for "Get Bob" command crashes tests
+- +AmosProAGA_lib.s/Bnk.Ric2 Reimplemented clean color palette support for both default ECS and new AGA.
+- Fixed the Get Bob crash issue reported by Alain.Treesong
+- Removed AmosPro_Personal.lib from configuration as it caused issues.
 
 
 ******************************************************************** 2020.05.13 AmosPro_Personal.lib Update + AmosPro AGA Pen/Color system Update.
@@ -7,6 +12,7 @@
 - AmosPro_Personal.lib should not be used with new AGA System (it currently crashes). It will soonly be integrated inside the AmosPro_AgaSupport.lib
 - Updated the PEN/Colors methods to be compatible with AGA 00-255 colors.
 - Fixed AGA Hires SPack/UnPack example
+
 
 ******************************************************************** 2020.05.10 AmosPro_Personal.lib
 
@@ -28,6 +34,7 @@
 - Reincluded all changes for +Interpreter.s -> +InterpreterAGA_Config.s
 - Reincluded Extensions/+AgaSupport.s
 - Reincluded all changes for Extensions/+compact.s
+
 
 ******************************************************************** 2020.05.04-07 Restart from source
 - Project entirely restarted from source.
