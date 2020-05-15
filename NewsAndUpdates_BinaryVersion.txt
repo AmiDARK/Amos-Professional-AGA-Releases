@@ -1,3 +1,15 @@
+******************************************************************** 2020.05.15 Bob Get & Color Palette
+
+- +AmosProAGA_lib.s/IffPal : Updated to handle 'AGAP' + ColourCount.w palette when more than 32 colors are available.
+- +AmosProAGA_library.s/EcCree : Updated to integrate AGAP + ColourCount.w palette when screen is created.
+- +AmosProAGA_lib.s/PalRout : Updated to handle 'AGAP' + ColourCount.w palette when more than 32 colors are available.
+- +AmosProAGA_lib.s/GSPal : Updated to handle 'AGAP' + ColourCount.w palette when more than 32 colors are available.
+- +AmosProAGA_lib.s/Bnk.SaveA0 (SB_Icon, SB_Bob, SP_Sp) : Save Sprite/Icon Bank updated to handle AGAP + ColourCount.w palette when saving to file.
+- +AmosProAGA_lib.s/Bnk.Load ( LB_Icons, LB_Sprites ) : Load Sprite/Icon bank updated to handle AGAP + ColourCount.w palette when available in the file.
+- Save Sprites/Bobs/Icons banks now save banks using "AGAP" mode with up to 256 colors (currently forced to 256 but will be dynamic in the future)
+- Load Sprites/Bobs/Icons banks now detect original Amos Professional 2.0 ECS banks and Amos Professional AGA ones using "AGAP" mode with correct color palette
+
+
 ******************************************************************** 2020.05.14 Bob Get & Color Palette
 
 - +AmosProAGA_lib.s/Bnk.Ric2 restored to initial state before AGA upgrade for "Get Bob" command crashes tests
