@@ -1,3 +1,9 @@
+******************************************************************** 2020.08.10 Bob Get & Color Palette
+- +AmosProAGA_lib.s/InSaveIff1-2 (SaveCMAP) : Updated to save up to 256 colors in IFF/ILBM files
+- Checked many Amos Professional 2.0 commands to check compatibility with Amos Professional AGA version.
+- Fixed the AMOS/WB switcher issue
+
+
 ******************************************************************** 2020.05.15 Bob Get & Color Palette
 
 - +AmosProAGA_lib.s/IffPal : Updated to handle 'AGAP' + ColourCount.w palette when more than 32 colors are available.
