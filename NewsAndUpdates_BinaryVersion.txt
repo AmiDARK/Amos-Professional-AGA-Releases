@@ -1,3 +1,53 @@
+Before use, don't forget to copy AmosProAGA_System/AmosProAGA.library into S:
+And Amos Pro configuration from AmosProAGA_System:S to S:
+
+
+******************************************************************** 2020.08.30
+- Finalized Copper list support for full RGB 24 color palette for both global colors 032-255 and each screen colors 001-031.
+- Load Iff now support fully RGB24 Color palette decoding and insertion in screen color palette datas
+- Finalized HAM8 Support with full RGB24 Color palette support
+
+
+******************************************************************** 2020.08.26
+- +w.s/IffBODY improvements for HAM8 Support. 24Bits RGB Backing Store (DPaintV) not supported.
+- +AmosProAGA_lib.s/IffBODY improvements for HAM8 Support. 24Bits RGB Backing Store (DPaintV) not supported.
+- ++AmosProAGA_lib.s/IffScreen improvements for HAM8 Support. 24Bits RGB Backing Store (DPaintV) not supported.
+
+
+******************************************************************** 2020.08.25
+- Completed RGB24 Color support for SetPalette and Copper List colors update
+- Continuation of AmosProAGA.library.s file component separation into several files.
+
+
+******************************************************************** 2020.08.18
+- Started AmosProAGA.library.s file component separation into several files.
+
+
+******************************************************************** 2020.08.13
+- +w.s/insertAGAColorsInCopper Updated to handle RGB24 bits colors data instead of RGB12 bits, in copper list
+- +wequ.s/globAgaPalL Added for lower bits of AGA color palette
+- +lEqu.s/EcScreenAGAPalL added for lower bits AGA Colors screen palette 032-255
+- +lEqu.s/EcPAlL added for lower bits AGA colors screen palette 000-031
+- +w.s/EcCree Updated to define RGB24 bits color palette instead of original RGB12 one
+- +lib.s/IffPal Updated to get full RGB24 bits color palette from an AGA palette.
+- +w.s/EcCopHo Updated to handle RGB24 bits color palette for default 000-031 screens colors
+
+
+******************************************************************** 2020.08.12
+- +lib.s/prepareHam8Logic method created for bitplanes list 'EcHam8Logic' to use for normal/Ham8 mode instead of default 'EcLogic' one.
+- +lib.s/IffBODY update to support HAM8 mode (add support for all IFF/ILBM loading (image/anim) for HAM8 mode)
+
+
+******************************************************************** 2020.08.11
+- +w.s/ScSwap (ScreenSwap) updated to use the HAM8 +2 bitplanes rolling method
+- +w.s/ScSwapS (ScreenSwapAll) updated to use the HAM8 +2 bitplanes rolling method
+- +w.s/EcCree (CreateScreen) updated to use the HAM8 +2 bitplanes rolling method
+- +w.s/EcCree (CreateScreen) updated to handle HAM8 mode in all resolutions.
+- +w.s/TAbk2 (autoback2) updated to use the HAM8 +2 bitplanes rolling method
+- +w.s/TAbk3 (autoback3) updated to use the HAM8 +2 bitplanes rolling method
+- +w.s/EcSHam8BPLS Created to make the +2 bitplanes rolling for HAM8 mode
+
+
 ******************************************************************** 2020.08.10 Bob Get & Color Palette
 - +AmosProAGA_lib.s/InSaveIff1-2 (SaveCMAP) : Updated to save up to 256 colors in IFF/ILBM files
 - Checked many Amos Professional 2.0 commands to check compatibility with Amos Professional AGA version.
