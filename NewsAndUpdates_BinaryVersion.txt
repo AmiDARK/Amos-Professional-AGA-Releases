@@ -2,6 +2,23 @@ Before use, don't forget to copy AmosProAGA_System/AmosProAGA.library into S:
 And Amos Pro configuration from AmosProAGA_System:S to S:
 
 
+******************************************************************** 2020.09.04
+- Fixed the color flickering on Load IFF calls.
+
+
+******************************************************************** 2020.09.03
+- Updated CLPopulate to consider 2nd RGB12 Color palette for registers 032-255
+- Fix 'Set Rgb24 Colour I, RGB24Value'
+
+
+******************************************************************** 2020.08.31
+- Fixed Object Editor 'unpack' command that was trashed due to new upack method in the AmosPro_Compact.lib
+- Updated internal EcSCol (Colour I,RGBValue) to be able to set both color capabilities RGB12->RGB24 and RGB24->RGB24
+- Colour I,RGB12 now fill both Upper and lower bits with the RGB12 value for smoother RGB12 shading
+- Added 'Set Rgb24 Colour COLORINDEX,RGB24VALUE' command to AmosPro_AgaSupport.lib extension.
+- fixed insertAGAColorsInCopper as it didn't insert AGA colors 032-0255 Lower 12 Bits correctly in the copper list.
+
+
 ******************************************************************** 2020.08.30
 - Finalized Copper list support for full RGB 24 color palette for both global colors 032-255 and each screen colors 001-031.
 - Load Iff now support fully RGB24 Color palette decoding and insertion in screen color palette datas
