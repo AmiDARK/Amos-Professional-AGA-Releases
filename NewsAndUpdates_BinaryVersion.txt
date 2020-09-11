@@ -2,6 +2,39 @@ Before use, don't forget to copy AmosProAGA_System/AmosProAGA.library into S:
 And Amos Pro configuration from AmosProAGA_System:S to S:
 
 
+******************************************************************** 2020.09.11
+- Added list of methods in CopperListSystem.s
+- Added list of methods in Screens.s
+- Fixed loading of AmosPro Help.
+- Increase +AMOSPro_AGA_library_Equ.s/SwapL from 32 bytes to 40 (Added 2.l for the 2 extra bitplane to swap on Screen Swap commands.)
+- Update Screen Swap to works with 8 bitplanes
+- Update Double Buffer to works with 8 bitplanes
+
+
+******************************************************************** 2020.09.09
+- Updated +Compact.s/InSPack6 to save RGB24 bits colors instead of previously RGB12
+- Updated +Compact.s/InSPack7 to save RGB24 bits colors instead of previously RGB12
+- Updates +AmosProAGA_Equ.s/Packed structure to handle RGB24 bits colors instead of previously RGB12
+- Updates +AmosProAGA_Equ.s/DefPal components to handle RGB24 bits colors instead of previously RGB12 ( + DefPalAga, DefPalL & DefPalAgaL )
+
+
+******************************************************************** 2020.09.08
+- Fixed dual playfield scroll bug that was reintroduced by some changes.
+- Updated batchs aall, alib and acomp to output only required datas
+- Updated C/Make_Toktable and C/Make_Labels to remove useless debug output
+- AmosProAGA_lib.s/Bnk.SaveA0 updated to save up to 256 colors using RGB24
+- AmosProAGA_lib.s/Bnk.Load updated to load up to 256 colors using RGB24
+- AmosProAGA_lib.s/Bnk.Ric updated to get up to 256 RGB24 colors instead of RGB12 previously.
+
+
+******************************************************************** 2020.09.07
+- Save Iff now save RGB24 colors instead of RGB12.
+
+
+******************************************************************** 2020.09.05
+- Colour I,RGB12 update both High and Low color bits with the RGB12 value entered.
+
+
 ******************************************************************** 2020.09.04
 - Fixed the color flickering on Load IFF calls.
 

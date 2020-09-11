@@ -1674,7 +1674,7 @@ It's usually colour three.
 
         Curs Pen index
 Font Editor
-{[RAMOSPro_Accessories:Font8x8_Editor.AMOS] Font Editor}
+{[RAMOSProAGA_Accessories:Font8x8_Editor.AMOS] Font Editor}
 
 The  AMOSPro  font editor allows you to generate your own 8x8 fonts for all
 your  text operations.  You can also access any of the standard Amiga fonts
@@ -4064,9 +4064,9 @@ OPENs a new AMOS SCREEN on the display.
 
 number ranges from 0 to 7.
 
-width and height set the size of the screen in pixels.
+width and height set the size of the screen in pixels. Sizes are betweeb 320-2048 pixels.
 
-colours enter the number of colours to be used.
+colours enter the number of colours to be used. Value can be : 2,4,8,16,32,64,128,256,4096,HAM8
 
 mode sets the screen mode. Allowable options include Lowres,Hires, and Laced.
 SCREEN SHOW
