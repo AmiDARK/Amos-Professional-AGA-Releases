@@ -1,6 +1,35 @@
 Before use, don't forget to copy AmosProAGA_System/AmosProAGA.library into S:
 And Amos Pro configuration from AmosProAGA_System:S to S:
 
+******************************************************************** 2020.09.20
+- Added new method "Get Aga Palette INDEX" to get current screen color palette
+- Added new method "Save Aga Palette FILE$, INDEX" to save an AGA palette stored in memory
+
+
+******************************************************************** 2020.09.19
+- Added new method "Load Aga Palette FILE$, INDEX" to load an IFF/ILBM CMAP file from disk
+- Added new method "Set Aga Palette INDEX" To update current screen + Global Aga Palette with the one defined in the Aga Palette INDEX
+
+
+******************************************************************** 2020.09.18
+- Work in progress on method : "load Aga Palette FILE$, Index"
+
+
+******************************************************************** 2020.09.17
+- Added new method "=Rgb24( Red8, Green8, Blue8 )" to return full RGB24 color from Red, Green and Blue 8 bits color components
+- Added new method "=RgbR8( RGB24Colors )" to return Red 8 bits component from full RGB24 color
+- Added new method "=RgbG8( RGB24Colors )" to return Green 8 bits component from full RGB24 color
+- Added new method "=RgbB8( RGB24Colors )" to return Blue 8 bits component from full RGB24 color
+
+
+******************************************************************** 2020.09.16
+- Added new method "Step fade aga SPEED"
+- Added new method "Fade Aga DELAY"
+
+
+******************************************************************** 2020.09.12
+- Identified crash location in the Accessories/Object_Editor.AMOS tool.
+
 
 ******************************************************************** 2020.09.11
 - Added list of methods in CopperListSystem.s
